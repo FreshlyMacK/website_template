@@ -1,0 +1,405 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100;0,300;0,400;0,600;0,700;1,100;1,300;1,400;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  box-shadow: none;
+}
+
+body, html {
+  color: #222f3e;
+  background-color: #c8d6e5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  margin: 0;
+  height: 100%;
+}
+
+a, a:hover {
+  text-decoration: none;
+  color: #485460;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navigation {
+  background-color: #7195bc;
+  padding: 12px 0;
+  text-align: center;
+  font-size: 12px;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.navigation.container {
+  margin: 0;
+  padding: 0;
+  width: 1260px;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navigation ul li {
+  display: inline-block;
+  margin-right: 24px;
+  transition: all 0.5s;
+}
+
+.navigation ul li a {
+  padding: 0;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #fff;
+  transition: all 0.5s;
+}
+
+.navigation ul li a:hover {
+  color: #385676;
+}
+
+.splash {
+  height: 900px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  padding: 0 24px;
+  background-image: url(./images/splash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0;
+  font-weight: bold;
+  color: #dfe6e9;
+  font-size: 90px;
+  font-family: "Libre Baskerville", serif;
+  font-style: oblique;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+}
+
+.main-subtitle {
+  margin: 12px 0 60px 0;
+  font-weight: normal;
+  color: #dfe6e9;
+  font-size: 60px;
+  font-family: "Libre Baskerville", serif;
+  font-style: oblique;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+}
+
+.btn {
+  padding: 18px 24px 18px 24px;
+  font-size: 16px;
+  background-color: #485460;
+  color: #ffffff;
+  font-family: "Libre Baskerville", serif;
+  font-style: oblique;
+  font-variant: small-caps;
+  letter-spacing: 0.2em;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: #53616f;
+  color: #000000;
+  box-shadow: 0px 0px 10px white;
+}
+
+.section-title {
+  position: relative;
+  margin: 0 0 60px 0;
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+  font-variant: small-caps;
+}
+
+.section-title:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 5px;
+  background: #485460;
+  left: 50%;
+  bottom: -16px;
+  margin-left: -25px;
+}
+
+.about {
+  background-color: #c8d6e5;
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.section-intro {
+  margin: 36px 0 0 0;
+}
+
+.features-wrapper {
+  display: flex;
+}
+
+.feature {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  text-align: center;
+  margin: 24px 0 0 0;
+}
+
+.feature i {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  color: #ffffff;
+  font-size: 50px;
+  transition: all 0.5s;
+}
+
+.feature i:hover {
+  transform: rotate(25deg);
+}
+
+.feature-title {
+  margin: 24px 0 0 0;
+  font-weight: normal;
+}
+
+.feature-description {
+  margin: 24px 0 0 0;
+  padding: 0 24px;
+}
+
+.statement {
+  background-image: url(./images/statement.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.statement p {
+  margin: 0;
+  text-align: center;
+  color: #8395a7;
+  font-size: 30px;
+  font-weight: bolder;
+  font-style: oblique;
+  letter-spacing: 0.2em;
+}
+
+.quotes {
+  background-color: #d9e3ed;
+}
+
+.quotes-wrapper {
+  margin: 72px 0 0 0;
+}
+
+.quote {
+  width: 100%;
+  padding: 0 72px;
+}
+
+.quote blockquote {
+  font-weight: 400;
+  padding: 0 36px;
+}
+
+.quote footer {
+  font-weight: bolder;
+  font-style: oblique;
+  margin: 12px 0 24px 0;
+}
+
+.gallery {
+  padding: 60px 0 0 0;
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 72px 0 0 0;
+}
+
+.gallery-item {
+  position: relative;
+  margin: 0;
+  flex: 0 0 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-item:before {
+  position: absolute;
+  display: none;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.7;
+}
+
+.gallery-item figcaption {
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.gallery-item:hover:before, .gallery-item:hover figcaption {
+  display: block;
+}
+
+.contact {
+  text-align: center;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  border: 2px solid #485460;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 30px;
+  border-radius: 20%;
+  margin-right: 24px;
+  transition: all 0.5s;
+}
+
+.social-links li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+
+.social-links li a:hover {
+  color: #5e6e7d;
+  transform: rotate(360deg);
+}
+
+.page-footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-weight: lighter;
+  font-style: oblique;
+  font-size: smaller;
+  letter-spacing: 0.2em;
+  padding: 12px 0;
+}
+
+.page-footer .container {
+  display: flex;
+  justify-content: center;
+}
+
+.page footer p {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .navigation {
+    position: static;
+  }
+
+  .main-title {
+    font-size: 45px;
+  }
+
+  .main-subtitle {
+    font-size: 30px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+
+  .features-wrapper {
+    display: block;
+  }
+
+  .feature {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .quote {
+    padding: 0;
+  }
+
+  .quote blockquote {
+    padding: 0;
+  }
+
+  .gallery-item {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .navigation {
+    position: static;
+  }
+
+  .main-title {
+    font-size: 50px;
+  }
+
+  .main-subtitle {
+    font-size: 35px;
+  }
+
+  .btn {
+    font-size: 14px;
+  }
+}
