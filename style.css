@@ -160,11 +160,11 @@ section {
 .about {
   background-color: #c8d6e5;
   text-align: justify;
-  text-indent: 2em;
 }
 
 .section-intro {
   margin: 36px 0 0 0;
+  text-indent: 2em;
 }
 
 .features-wrapper {
@@ -197,6 +197,7 @@ section {
 }
 
 .feature-description {
+  text-align: justify;
   margin: 24px 0 0 0;
   padding: 0 24px;
 }
